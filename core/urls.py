@@ -16,14 +16,30 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
+from django.conf.urls.i18n import i18n_patterns
+from django.conf import settings
+from .schema import swagger_urlpatterns
+
 
 urlpatterns = [
     path("i18n/", include("django.conf.urls.i18n")),
+    path('admin/', admin.site.urls),
 ]
 
+if 'rosetta' in settings.INSTALLED_APPS:
+    urlpatterns += [
+        path('rosetta/', include('rosetta.urls')),
+    ]
+
+
 urlpatterns += (
-    path('admin/', admin.site.urls),
+    # path('admin/', admin.site.urls),
 )
+
+
+#swagger
+ 
+urlpatterns += swagger_urlpatterns
 
 
 if settings.DEBUG:

@@ -28,4 +28,9 @@ JAZZMIN_SETTINGS = {
     # TIL ALMASHTIRISH (LANGUAGE CHOOSER) SOZLAMASI       #
     #######################################################
     "language_chooser": True,  # Admin panelda tillar menyusini yoqadi
+    
+    # Tillar menyusi uchun qo'shimcha sozlama
+    "usermenu_links": [],
 }
+
+
