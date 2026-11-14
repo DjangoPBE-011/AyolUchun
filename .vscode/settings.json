@@ -1,0 +1,20 @@
+{
+  "material-icon-theme.folders.customClones": [
+    {
+      "name": "accounts-admin",
+      "base": "admin",
+      "color": "blue-500",
+      "lightColor": "blue-700",
+      "folderNames": ["accounts"],
+      "rootFolderNames": ["apps"]
+    },
+    {
+      "name": "courses-app",
+      "base": "app",
+      "color": "amber-500",
+      "lightColor": "amber-700",
+      "folderNames": ["courses"],
+      "rootFolderNames": ["apps"]
+    }
+  ]
+}
